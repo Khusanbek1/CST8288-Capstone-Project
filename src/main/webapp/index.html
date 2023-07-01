@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>CST8288 Messaging Application</title>
+</head>
+
+<body>
+<h1>Group Chat App</h1>
+
+<!-- Message dialog box -->
+<div class="dialog-container">
+	<div class="dialog-reply-container">
+		<p class="dialog-message" id="replyText">{0}</p>
+	</div>
+</div>
+
+<!-- Text area to to send messages -->
+<div class="message-container">
+	<form action="chatsServlet" id="messageForm" method="GET">
+		Text: <input type="text" name="message">
+		<input type="submit" id="submit">
+	</form>
+</div>
+
+<!-- list of current participants -->
+<div class="participants-container">
+	<p>Person1</p>
+	<p>Person2</p>
+	<p>Person3</p>
+</div>
+
+</body>
+</html>
